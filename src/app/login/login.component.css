@@ -1,4 +1,6 @@
-body {
+
+::ng-deep body {
+    background-color: #006389 !important;
     display: inline-block;
     max-width: 100%;
     margin-bottom: 5px;
