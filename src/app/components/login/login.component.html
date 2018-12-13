@@ -1,0 +1,24 @@
+<div class="cover">
+  <div class="logo">
+    <h1>Bootcamp App</h1>
+  </div>
+  <div class="login">
+    <h2>Log in</h2>
+    <form name="form" #formLogin="ngForm">
+      <div class="form-group" [ngClass]="{ 'has-error': formLogin.submitted && !userName.valid }">
+        <label>User name:</label>
+        <input class="form-control" type="text" id="txtUserName" name="userName" #userName="ngModel" required >
+        <div *ngIf="formLogin.submitted && !userName.valid" class="help-block">Username is required</div>
+      </div>
+      <div class="form-group" [ngClass]="{ 'has-error': formLogin.submitted && !password.valid }">
+        <label>Password:</label>
+        <input class="form-control" type="text" id="txtPassword" name="password" #password="ngModel" required >
+        <div *ngIf="formLogin.submitted && !password.valid" class="help-block">Password is required</div>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-default">Log In</button>
+        <a class="btn btn-link">Sign up for Bootcamp</a>
+      </div>
+    </form>
+  </div>
+</div>
