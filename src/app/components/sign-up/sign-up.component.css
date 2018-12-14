@@ -8,23 +8,26 @@ label {
     font-weight: 700;
 }
 .cover {
-    width: 400px;
-    height: 400px;
+    width: 1000px;
     position: fixed;
-    margin-left: -200px;
+    margin-left: -500px;
     margin-top: -350px;
     top: 50%;
     left: 50%;
 }
 .logo {
     margin: 0;
-    font-size: 2em;
+    font-size: 5rem !important;
     font-weight: 200;
     font-family: "Audiowide", cursive;
     color: #92c35e;
     text-align: center;
     text-shadow: 1px 1px 0 #333333;
     line-height: 70px;
+}
+
+.logo h1{
+  font-size: 5rem;
 }
 .signUp {
     padding: 30px 20px;
@@ -93,4 +96,21 @@ label {
     background-image: none;
     border: 1px solid transparent;
     border-radius: 4px;
+}
+
+.help-block {
+    font-size: 12px;
+}
+.has-error{
+  color: red;
+}
+.form-control.is-invalid{
+  border-color: #dc3545;
+}
+.invalid-feedback {
+    display: none;
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #dc3545;
 }
