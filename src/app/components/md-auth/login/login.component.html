@@ -1,0 +1,46 @@
+<div class="cover">
+  <div class="logo">
+    <h1>Bootcamp</h1>
+  </div>
+  <div class="login">
+    <h2>Log in</h2>
+    <form>
+      <div class="form-group">
+        <label>User name:</label>
+        <dx-text-box >
+          <dx-validator>
+            <dxi-validation-rule
+              type="required"
+              message="User name is required">
+            </dxi-validation-rule>
+          </dx-validator>
+        </dx-text-box>
+      </div>
+      <div class="form-group">
+        <label>Password:</label>
+        <div>
+          <dx-text-box
+              mode="password"
+              [(value)]="password">
+              <dx-validator>
+                  <dxi-validation-rule
+                    type="required"
+                    message="Password is required">
+                  </dxi-validation-rule>
+              </dx-validator>
+          </dx-text-box>
+        </div>
+      </div>
+      <div class="form-group">
+        <dx-button
+            id="button"
+            text="Log In"
+            type="submit"
+            class="btn btn-default"
+            [useSubmitBehavior]="true">
+        </dx-button>
+        <a class="btn btn-link" [routerLink]="['/register']">Sign up for Bootcamp</a>
+      </div>
+    </form>
+  </div>
+</div>

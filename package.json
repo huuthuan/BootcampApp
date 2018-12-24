@@ -24,8 +24,10 @@
     "devextreme": "^18.2.3",
     "devextreme-angular": "^18.2.3",
     "jquery": "^3.3.1",
+    "jszip": "^3.1.5",
     "ngx-bootstrap": "^3.1.3",
     "rxjs": "~6.3.3",
+    "stream": "0.0.2",
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26"
   },
