@@ -1,0 +1,41 @@
+.page-header {
+  margin: 0;
+  h1 {
+    margin: 0;
+    font-weight: 100;
+    font-size: 2em;
+  }
+  .btn-compose .dx-button-content {
+    padding: 0 !important;
+  }
+}
+
+.panel-feed {
+  margin-top: 20px;
+  .panel-body {
+    padding: 0;
+  }
+}
+
+.stream {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style: none;
+    border-bottom: 1px solid #eeeeee;
+    padding: 1em 0;
+  }
+}
+
+.compose {
+  border-bottom: 1px solid #eee;
+  padding-left: 15px;
+  padding-right: 15px;
+  h2 {
+    font-size: 1.4em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+

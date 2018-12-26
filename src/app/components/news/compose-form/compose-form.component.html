@@ -1,0 +1,27 @@
+<form role="form" id="compose-form">
+  <div class="form-group">
+    <dx-text-area
+      [height]="90"
+      [maxLength]="maxLength">
+      <dx-validator>
+        <dxi-validation-rule type="required" message="Company name is required">
+        </dxi-validation-rule>
+      </dx-validator>
+    </dx-text-area>
+  </div>
+  <div class="form-group">
+    <dx-button
+      icon="glyphicon glyphicon-send"
+      text="Post"
+      type="default"
+      class="btn btn-primary btn-post">
+    </dx-button>
+    <dx-button
+      text="Cancel"
+      type="default"
+      (onClick)="cancelPost()"
+      class="btn btn-default btn-cancel-compose btn-cancel">
+    </dx-button >
+    <span class="help-block help-count pull-right">255</span>
+  </div>
+</form>

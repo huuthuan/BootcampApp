@@ -1,0 +1,42 @@
+.page-header {
+  margin: 0;
+  h1 {
+    margin: 0;
+    font-weight: 100;
+    font-size: 2em;
+  }
+}
+
+.questions {
+  margin-top: 1em;
+  ul{
+    margin-bottom: 1.4em;
+  }
+  .question-user {
+    .user {
+      width: 40px;
+      border-radius: 5px;
+    }
+    .username {
+      margin-left: .4em;
+    }
+    .asked {
+      color: #aaaaaa;
+      margin-left: .6em;
+      font-size: .8em;
+    }
+  }
+  p{
+    .label-primary{
+      margin-right: .3em;
+    }
+  }
+  .question-description{
+    p{
+      word-wrap: break-word
+    }
+  }
+  .question-info{
+    text-align: center;
+  }
+}

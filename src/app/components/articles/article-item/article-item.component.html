@@ -1,0 +1,29 @@
+<article>
+  <h2>
+    <a href="/{{articles.title}}">{{articles.title}} </a>
+  </h2>
+  <div class="info">
+    <span>
+      <span class="glyphicon glyphicon-calendar"></span>
+      {{articles.timePost}}
+    </span>
+    <span class="user">
+      <a href="{{articles.userName}}">
+        <img src="{{articles.imgUser}}">
+      </a>
+      <a href="{{articles.userName}}">{{articles.userName}}</a>
+    </span>
+    <span>
+      <span class="glyphicon glyphicon-comment"></span>
+      ({{articles.numberComment}}) Commen
+    </span>
+  </div>
+  <div>
+    <p>{{articles.content}}</p>
+  </div>
+  <div class="tags">
+    <a href="{{articles.tag}}">
+      <span class="label label-default">{{articles.tag}}</span>
+    </a>
+  </div>
+</article>

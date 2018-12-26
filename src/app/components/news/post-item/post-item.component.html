@@ -1,0 +1,27 @@
+<div class="feed-container">
+  <a href="/{{post.username}}">
+    <img src="{{post.imguser}}" [src]="post.imguser" alt="{{post.imguser}}" class="user">
+  </a>
+  <div class="post">
+    <h3>
+      <a routerLink="/{{post.username}}">{{post.username}}</a>
+      <small>{{post.timepost}}</small>
+    </h3>
+    <p>{{post.content}}</p>
+    <div class="info">
+      <a href="#">
+        <span class="glyphicon glyphicon-thumbs-up"></span>
+        <span> Like </span>
+        <span>({{post.like}})</span>
+      </a>
+      <a routerLink="#" (click)="newComment(post)">
+        <span class="glyphicon glyphicon-comment"></span>
+        <span> Comment </span>
+        <span>({{post.numbercomment}})</span>
+      </a>
+    </div>
+    <div class="comments" *ngIf="selectedPost && selectedPost.idArticles === post.idArticles && isAddingComment">
+      <app-comment-form></app-comment-form>
+    </div>
+  </div>
+</div>
