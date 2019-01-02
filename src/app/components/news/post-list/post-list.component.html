@@ -1,0 +1,16 @@
+<div class="panel panel-default panel-feed">
+      <div class="panel-heading">
+        <h3 class="panel-title">Latest posts</h3>
+      </div>
+      <div class="panel-body">
+        <div class="compose" *ngIf="addingPost()">
+          <h2>Compose a new post</h2>
+            <app-compose-form></app-compose-form>
+        </div>
+        <ul class="stream" *ngFor="let post of posts">
+          <li>
+            <app-post-item [post]="post"></app-post-item>
+          </li>
+        </ul>
+      </div>
+    </div>

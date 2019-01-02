@@ -1,0 +1,25 @@
+<div class="page-header">
+  <a routerLink="/writearticle">
+    <dx-button
+      icon="glyphicon glyphicon-bullhorn"
+      text=" Ask Questions"
+      type="default"
+      class="btn-primary pull-right">
+    </dx-button>
+  </a>
+  <h1>Questions</h1>
+</div>
+<div class="questions">
+  <ul class="nav nav-tabs">
+    <li>
+      <a (click)="selectedTab = status.Unanswered">Unanswered</a>
+    </li>
+    <li>
+      <a (click)="selectedTab = status.Answered">Answered</a>
+    </li>
+    <li>
+      <a (click)="selectedTab = status.All">All Questions</a>
+    </li>
+  </ul>
+  <app-question [status]="selectedTab"></app-question>
+</div>

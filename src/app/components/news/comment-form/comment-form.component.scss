@@ -1,0 +1,36 @@
+a img.user {
+  width: 60px;
+  border-radius: 100px;
+  float: left;
+}
+
+ol {
+  margin: .8em 0 0;
+  padding: .2em 0;
+  background-color: #f4f4f4;
+  border-radius: 3px;
+  overflow-x: auto;
+  li {
+    padding: .6em .6em .6em 0;
+    img {
+      width: 35px;
+      border-radius: 4px;
+      float: left;
+      margin-left: 10px;
+    }
+    h4 {
+      margin: 0;
+      margin-left: 45px;
+      padding: 0 0 .2em .8em;
+      font-size: .9em;
+      small {
+        margin-left: .3em;
+      }
+    }
+    div {
+      margin-left: 45px;
+      padding: 0 .8em;
+      font-size: .9em;
+    }
+  }
+}

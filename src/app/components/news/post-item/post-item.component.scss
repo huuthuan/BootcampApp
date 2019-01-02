@@ -1,0 +1,31 @@
+.feed-container {
+  padding-left: 15px;
+  padding-right: 15px;
+  a img.user {
+    width: 60px;
+    border-radius: 100px;
+    float: left;
+  }
+  div.post {
+    margin-left: 60px;
+    padding: 0 0 0 1.2em;
+    overflow-x: auto;
+    h3 {
+      font-size: 1em;
+      margin: 0;
+      margin-bottom: .2em;
+      small {
+        margin-left: .3em;
+        font-size: .8em;
+      }
+    }
+    .info a {
+      text-decoration: none;
+      font-size: .8em;
+      margin-right: .6em;
+    }
+    .comments {
+      margin-top: .6em;
+    }
+  }
+}

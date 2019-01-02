@@ -1,0 +1,56 @@
+<div class="page-header">
+  <h1>Network</h1>
+</div>
+<div class="profile">
+  <div class="row">
+    <div class="col-md-2 tile_stats_count">
+      <span class="glyphicon glyphicon-envelope">  Feeds</span>
+      <div>2</div>
+    </div>
+    <div class="col-md-2 tile_stats_count">
+      <span class="glyphicon glyphicon-pencil">   Articles</span>
+      <div>2</div>
+    </div>
+    <div class="col-md-2 tile_stats_count">
+      <span class="glyphicon glyphicon-comment">  Comments</span>
+      <div>2</div>
+    </div>
+    <div class="col-md-2 tile_stats_count">
+      <span class="glyphicon glyphicon-question-sign">   Questions</span>
+      <div>2</div>
+    </div>
+    <div class="col-md-2 tile_stats_count">
+      <span class="glyphicon glyphicon-education">  Answers</span>
+      <div>2</div>
+    </div>
+    <div class="col-md-2 tile_stats_count">
+      <span class="glyphicon glyphicon-fire">  Global Interactions</span>
+      <div>2</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3 user-profile">
+      <img src="http://trybootcamp.vitorfs.com/static/img/user.png">
+    </div>
+    <div class="col-md-9">
+      <ul class="nav nav-pills">
+        <li class="active">
+          <a href="#" data-toggle="tab">Last Feeds</a>
+        </li>
+        <li>
+          <a href="#" data-toggle="tab">Activity by type
+          </a>
+        </li>
+        <li>
+          <a href="#" data-toggle="tab">Activity by day</a>
+        </li>
+        <li>
+          <a href="#" data-toggle="tab">Activity by Total</a>
+        </li>
+      </ul>
+      <div class="tab-content">
+        <app-post-item [post]="post"></app-post-item>
+      </div>
+    </div>
+  </div>
+</div>
