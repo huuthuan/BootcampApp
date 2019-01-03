@@ -12,6 +12,9 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
+## npm install bootstrap@3.3.7
+## npm install devextreme@18.2.3
+
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 ## Running unit tests
